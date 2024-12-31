@@ -16,6 +16,7 @@ body {
   padding-top: 40px;
   min-height: 5000px;
   background: #c9c9c9;
+  background-attachment: fixed;
 }
 .head h1 {
   text-transform: uppercase;
@@ -257,4 +258,57 @@ body {
   line-height: 45px;
   font-size: 20px;
   z-index: 99999;
+}
+.skill {
+  padding-top: 70px;
+  padding-left: 50px;
+  position: relative;
+}
+.skill h3 {
+  cursor: pointer;
+  font-size: 50px;
+  text-transform: uppercase;
+  background: linear-gradient(
+    to right,
+    #ff0000,
+    #f7f7f7,
+    rgb(51, 14, 184),
+    #ffffff,
+    #ff0101
+  );
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: skill 2.5s linear infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.5;
+  }
+}
+.skill h2 {
+  color: #0b07f1;
+  font-size: 30px;
+  cursor: pointer;
+  animation: blink is linear infinite;
+  text-shadow: 2px 2px 2px white;
+}
+
+.skill ul {
+  list-style: none;
+}
+.skill ul li {
+  padding-top: 20px;
+}
+.skill img {
+  position: relative;
+  top: -900px;
+  left: 600px;
+  background-size: cover;
+  background-attachment: fixed;
+  filter: drop-shadow(2px 2px 3px white);
 }
